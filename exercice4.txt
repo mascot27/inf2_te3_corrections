@@ -1,0 +1,29 @@
+ligne 2:
+typedef struct Elem
+
+ligne 4:
+struct Elem* suivant
+
+ligne 5:
+} Element;
+
+ligne 7:
+typedef Element* Pile
+
+ligne 9:
+bool empiler(Pile* pile, Info valeur)
+
+ligne 10:
+Element* tmp = (Element*) malloc(sizeof(Element));
+
+ligne 11:
+if(!tmp)
+
+ligne 14:
+*tmp = (Element){valeur, *pile}
+
+ligne 19:
+Pile unePile = NULL;
+
+ligne 21:
+empiler(&unPile, i);
